@@ -1,0 +1,2 @@
+playwright==1.17.0
+parsel==1.6.0
