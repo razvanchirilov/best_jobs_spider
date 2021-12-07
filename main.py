@@ -1,6 +1,5 @@
 from src.best_jobs_spider import BestJobsSpider
 
-
 if __name__ == '__main__':
     login_url = "https://www.bestjobs.eu/en/login"
 
@@ -14,7 +13,6 @@ if __name__ == '__main__':
     job_items = []
     for job_dict in spider.generate_job_dicts(job_cards):
         job_items.append(job_dict)
-
 
     # pw = PlaywrightSync()
     # page = pw.get_page()

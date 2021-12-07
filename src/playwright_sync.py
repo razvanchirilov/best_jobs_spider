@@ -1,20 +1,13 @@
 from playwright.sync_api import sync_playwright
 from credentials import USERNAME, PASSWORD
-
-CSS_SELECTORS = {
-    "username": "input#login_form__username",  # input username selector from the page:
-    "password": "input#login_form__password",
-    "submit": "button[type=submit]",
-    "jobs_container": "#app-main-content",
-    "job_card": ""
-}
+from src.best_jobs_parser import CSS_SELECTORS
 
 
 class PlaywrightSync:
     playwright = None
     browser = None
-    headless: bool = True
-    slow_mo: int = None
+    headless: bool = False
+    slow_mo: int = 500
 
     def __init__(self, *args, **kwargs):
         self.playwright = sync_playwright().start()
