@@ -11,8 +11,8 @@ CSS_SELECTORS = {
 
 XPATH_SELECTOR = {
     "job_cards": "//div[contains(@class,'job-card')]",
-    "job_location": "//span[@class='stretched-link-exception']//a/text()",
-    "job_salary": "normalize-space(//div[@class='text-right']//div[@class='text-nowrap']/text())"
+    "job_location": ".//span[@class='stretched-link-exception']//a/text()",
+    "job_salary": "normalize-space(.//div[@class='text-right']//div[@class='text-nowrap']/text())"
 
 }
 

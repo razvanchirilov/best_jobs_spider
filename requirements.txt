@@ -1,2 +1,13 @@
-playwright==1.17.0
+cssselect==1.1.0
+greenlet==1.1.2
+importlib-metadata==4.8.2
+keyring==23.4.0
+lxml==4.6.4
 parsel==1.6.0
+playwright==1.17.0
+pyee==8.2.2
+pywin32-ctypes==0.2.0
+six==1.16.0
+w3lib==1.22.0
+websockets==10.1
+zipp==3.6.0

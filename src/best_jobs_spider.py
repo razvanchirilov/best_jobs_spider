@@ -14,3 +14,4 @@ class BestJobsSpider(PlaywrightSync, BestJobsParser):
     - Login into Bestjobs website with credentials.py from credentials.py.py file;
     - Scrape jobs information from the jobs page in a Jobs dict.
     """
+

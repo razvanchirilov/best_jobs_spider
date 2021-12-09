@@ -1,3 +1,4 @@
+import json
 from src.best_jobs_spider import BestJobsSpider
 
 if __name__ == '__main__':
@@ -14,9 +15,11 @@ if __name__ == '__main__':
     for job_dict in spider.generate_job_dicts(job_cards):
         job_items.append(job_dict)
 
-    # pw = PlaywrightSync()
-    # page = pw.get_page()
-    # pw.login(page, login_url)
+    with open('jobsInfo.json', 'w', encoding='utf-8') as outfile:
+        for job_item in job_items:
+            json.dump(job_item, outfile, ensure_ascii=False, indent=4)
+            outfile.write('\n')
+
 
     print(1)
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
